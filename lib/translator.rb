@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_path, emote)
   english
 end
 
-def get_english_meaning
+def get_english_meaning(file_path, emote)
   japanese = ""
   emoticons = YAML.load_file(file_path)
   emoticons.each do |meaning, emoticon|
