@@ -9,7 +9,6 @@ def load_library(file_path)
     hash[meaning] = {:english => emoticon[0], :japanese => emoticon[1]}
   end
   hash
-  binding.pry
 end
 
 
