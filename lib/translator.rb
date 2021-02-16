@@ -14,8 +14,14 @@ end
 
 
 def get_english_meaning(file_path, emote)
-  meaning = ""
+  meaning_return = ""
   emoticons = load_library(file_path)
+  emoticons.each do |meaning, emotes|
+    if emotes[:japanese] == emote
+      meaning_return = meaning
+    end
+  end
+  meaning_return
 end
 
 def get_japanese_emoticon(file_path, emote)
